@@ -12,6 +12,11 @@ int main() {
    }else{
     cout<<"The difference of num1 and num2 is : "<< num1-num2 << endl;
    }
-
-    return 0;
+   char ch;
+   cout << "Enter a character: ";
+   cin >> ch;
+   if(97<=ch && ch<=122){
+    cout<<"The character is a lowercase letter."<<endl;
+   }
+   return 0;
 }
