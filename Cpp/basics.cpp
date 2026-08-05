@@ -1,7 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
+class Student{
+    public:
+    string name;
+    int age;
+    void display(){
+        cout<<"Name: "<<name<<endl;
+        cout<<"Age: "<<age<<endl;
+    }
+};
 
 int main() {
+   Student s1;
+   s1.name = "Alice";
+   s1.age = 20;
+   s1.display();
    int num1, num2;
    cout << " Enter the Values of Two Numbers:" << endl;
    cin >> num1 >> num2;
