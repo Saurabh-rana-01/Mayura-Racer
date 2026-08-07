@@ -16,6 +16,9 @@ int main() {
    s1.age = 20;
    s1.display();
    int num1, num2;
+   string str;
+   getline(cin , str);
+   cout<<str<<endl;
    cout << " Enter the Values of Two Numbers:" << endl;
    cin >> num1 >> num2;
    cout << " Num1:"<<num1 << "\n Num2:" << num2 << endl;
@@ -31,5 +34,6 @@ int main() {
    if(97<=ch && ch<=122){
     cout<<"The character is a lowercase letter."<<endl;
    }
+
    return 0;
 }
