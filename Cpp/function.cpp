@@ -5,20 +5,23 @@
 #include<iostream>
 using namespace std;
 
-int maxx(int a, int b){
-    if(a>b){
-        return a;
-    }else{
-        return b;
-    }
-   
-}
-
+// pass by value 
+    void doSomething(string s){
+                    s[0]= 'm';
+                    cout << s <<endl;
+                  }  
+                    
+                  
 int main(){
-    
-    int num1, num2;
-    cout<<"Enter the Values of Two Numbers: "<<endl;
-    cin>>num1>>num2;
-    cout<<"The Maximum Number is: "<<maxx(num1,num2)<<endl;
+
+    string s="hello";
+    doSomething(s);
+    cout<<s<<endl;
     return 0;
+}                 
+
+// Passing by reference
+void doSomethingReference(string &s){
+    s[0] = 'm';
+    cout << s << endl;
 }
