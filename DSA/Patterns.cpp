@@ -18,6 +18,7 @@ void print2(int n){
         cout<<endl;
     }
 }
+ 
 
 void print3(int n){
     for(int i=1;i<=n;i++){
@@ -49,13 +50,15 @@ void print5(int n){
 void print6(int n){
 
     for(int i=0;i<=n;i++){
-        for (int j = 0; j <= n - i; j++) {
+        for (int j = 0; j <= n - i-1; j++) {
             cout << " ";
         }
         for(int j=0;j<1+i*2;j++){
             cout<<"*";
         }
-    
+        for (int j = 0; j <= n - i-1; j++) {
+            cout << " ";
+        }
         cout<<endl;
     }
 }
@@ -72,7 +75,7 @@ void print7(int n){
         cout << endl;
     }
 
-    // Bottom half (inverted pyramid)
+    
     for(int i = n-1; i >= 1; i--) {
         for(int j = 1; j <= n - i; j++) {
             cout << " ";
@@ -87,6 +90,20 @@ void print7(int n){
     
     }
 
+void print8(int n){
+    for(int i=0;i<=n;i++){
+        for(int j=0;j<i;j++){
+            cout<<" ";
+        }
+        for(int j=0;j<2*n-(1+2*i);j++){
+            cout<<"*";
+        }
+        for(int j=0;j<i;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}
 
 
 
@@ -95,6 +112,6 @@ int main(){
     int n;
     cin>>n;
 
-    print7(n);
+    print8(n);
     return 0;
 }
