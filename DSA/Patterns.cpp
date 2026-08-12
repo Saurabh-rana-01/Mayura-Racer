@@ -49,14 +49,14 @@ void print5(int n){
 
 void print6(int n){
 
-    for(int i=0;i<=n;i++){
-        for (int j = 0; j <= n - i-1; j++) {
+    for(int i=0;i<n;i++){
+        for (int j = 0; j < n - i-1; j++) {
             cout << " ";
         }
         for(int j=0;j<1+i*2;j++){
             cout<<"*";
         }
-        for (int j = 0; j <= n - i-1; j++) {
+        for (int j = 0; j < n - i-1; j++) {
             cout << " ";
         }
         cout<<endl;
@@ -108,10 +108,12 @@ void print8(int n){
 
 
 
+
+
 int main(){
     int n;
     cin>>n;
-
+    print6(n);
     print8(n);
     return 0;
 }
