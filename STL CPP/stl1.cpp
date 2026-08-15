@@ -21,6 +21,52 @@ void explainPair(){
    }
 }
 
+void expliainVector(){
+     
+    vector<int> v;
+    v.push_back(1);
+    v.emplace_back(2);
+
+    vector<pair<int,int>> vec;
+
+    vec.push_back({1,2});
+    vec.emplace_back(3,4);
+
+    vector<int> v(5, 100);
+
+    vector<int> v(5);
+
+    vector<int> v1(5, 20);
+
+    vector<int>::iterator it = v.begin();
+
+    cout<<v[0]<<" "<<v.at(0)<<endl;
+
+    cout<<v.back()<<endl;
+
+    for(vector<int>::iterator it = v.begin(); it != v.end(); it++){
+        cout<<*it<<" ";
+    }
+
+    for(auto it = v.begin(); it != v.end(); it++){
+        cout<<*it<<" ";
+    }
+
+    for(auto it : v){
+        cout<<it<<" ";
+    }
+
+    v.erase(v.begin()+1);
+
+    v.erase(v.begin()+1, v.begin()+3);
+
+    
+
+
+
+
+}
+
 
 int main(){
     print();
